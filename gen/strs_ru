@@ -1,0 +1,88 @@
+
+//MoneyTalk
+
+//Oferta
+"Oferta.Auth.Text" = "Продолжая, Вы соглашаетесь";
+"Oferta.Conditions.Link" = "с условиями оферты";
+"Oferta.Oferta" = "Оферта";
+"Oferta.TransferConditions" = "Условия переводов";
+
+//SMS confirmation
+
+"SMS.ResendCode" = "Отправить код повторно";
+"SMS.CodeDescription" = "Для защиты ваших платежных\nданных введите код, отправленный\nВам по СМС";
+
+//Pin code
+"Pin.FirstPin.Set" = "Задайте код доступа\nк платежным данным";
+"Pin.FirstPin" = "Введите код доступа";
+"Pin.SecondPin" = "Повторите код доступа";
+"Pin.СurrentPin.Enter" = "Введите текущий код доступа";
+"Pin.Error.PinAttemptsExceeded" = "Вход в приложение временно заблокирован, так как Вы неправильно ввели код доступа";
+"Pin.UserBlockedUntil" = "Вы сможете ввести код через:";
+"Pin.UserBlocked" = "Вход заблокирован";
+
+//TouchID
+"TurnOnTouchID.Suggest.Line1" = "Подключите авторизацию по TouchID";
+"TurnOnTouchID.Suggest.Line2" = "чтобы не вводить код доступа";
+"TurnOnTouchID.Suggest.Ok" = "Ок";
+"TouchID.Alert" = "Приложите палец, чтобы перейти к платежным данным";
+
+//Transfer
+"Transfer.Title" = "Перевод";
+"Transfer.Perform" = " Отправить деньги";
+"Transfer.CardNumber.Sender" = "Номер вашей карты";
+"Transfer.FromCard" = "С карты";
+"Transfer.NewCard" = "Новая карта";
+"Transfer.FromNewCard" = "С новой карты";
+"Transfer.PhoneNumber.Placeholder" = "Номер телефона";
+"Transfer.CardNumber.Receiver" = "Номер карты получателя";
+"Transfer.TransferAmount" = "Сумма перевода";
+"Transfer.Cards" = "Карты";
+"Transfer.Completed" = "%@ отправил %@ %@руб.";
+"Transfer.phoneHint" = "На этот номер телефона будет отправлено уведомление о переводе";
+"Transfer.cardNumberHint" = "Укажите номер карты, на которую надо зачислить перевод";
+"Transfer.performButton" = "Перевести";
+"Transfer.saveCard" = "Сохранить карту";
+"Transfer.segmentedControlPhone" = "По номеру телефона";
+"Transfer.segmentedControlCard" = "По номеру карты";
+//Errors
+"Transfer.errorSource" = "Укажите карту для перевода";
+"Transfer.errorDestination" = "Укажите карту получателя";
+"Transfer.errorSumm" = "Введите сумму от %@ до %@ руб.";
+
+//Commission
+"Commission.Value" = "Комиссия %@ руб.";
+"Commission.NoCommission" = "Комиссия не взимается";
+"Commission.LoadingError" = "Не удалось загрузить комиссию";
+
+
+//Settings
+"Settings.Card" = "Мои карты";
+"Settings.Reset" = "Сброс";
+"Settings.TouchID" = "TouchID";
+"Settings.MoneyTalk.ButtonTitle" = "Настройки денежных переводов";
+"Settings.MoneyTalk.Title" = "Настройки";
+"Settings.AttachCard" = "Привязать карту";
+"title_deleteCardAlert" = "Удалить карту?";
+"Setting.oneCardHint" = "Карта для отправки и получения денег";
+"Settings.mainCardHint" = "Основная - карта для отправки и получения денег";
+"Settings.main" = "Основная";
+
+//Reset
+"Reset.ChangePassword" = "Поменять код доступа";
+"Reset.ResetSettings" = "Сбросить все настройки";
+"Reset.Title" = "Сброс";
+
+//API errors
+"Error.ErrorTitle" = "Ой!";
+"Error.CouldNotSendConfirmationCode" = "Не удалось доставить код подтверждения. Попробуйте снова.";
+
+//Welcome Screen
+"Welcome.Title1" = "MoneyTalk";
+"Welcome.Title2" = "Перевод денег";
+"Welcome.Title3" = "Получение денег";
+
+"Welcome.Text1" = "Ваш привычный  Телеграм\nс новыми возможностями";
+"Welcome.Text2" = "Отправляйте деньги другу\nпрямо в чате: по номеру\nтелефона или на карту";
+"Welcome.Text3" = "Друг получит деньги\nи без приложения: мы отправим\nему смс с инструкциями»;
+

@@ -20,7 +20,7 @@
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:id="@+id/icon_image1"
-                android:src="@drawable/intro1"/>
+                android:src="@drawable/mt_intro_1_"/>
 
             <ImageView
                 android:layout_width="wrap_content"

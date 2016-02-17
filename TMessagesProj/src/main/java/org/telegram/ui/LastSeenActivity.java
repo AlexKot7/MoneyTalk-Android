@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2015.
+ * Copyright Nikolai Kudashov, 2013-2016.
  */
 
 package org.telegram.ui;
@@ -33,7 +33,7 @@ import org.telegram.messenger.MessagesController;
 import org.telegram.messenger.NotificationCenter;
 import org.telegram.messenger.ApplicationLoader;
 import org.telegram.messenger.FileLog;
-import org.telegram.messenger.R;
+import ru.tinkoff.telegram.mt.R;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.RequestDelegate;
 import org.telegram.tgnet.TLObject;
@@ -287,12 +287,15 @@ public class LastSeenActivity extends BaseFragment implements NotificationCenter
         } else if (currentType == 2) {
             req.rules.add(new TLRPC.TL_inputPrivacyValueAllowContacts());
         }
-        final ProgressDialog progressDialog = new ProgressDialog(getParentActivity());
-        progressDialog.setMessage(LocaleController.getString("Loading", R.string.Loading));
-        progressDialog.setCanceledOnTouchOutside(false);
-        progressDialog.setCancelable(false);
-        progressDialog.show();
-
+        ProgressDialog progressDialog = null;
+        if (getParentActivity() != null) {
+            progressDialog = new ProgressDialog(getParentActivity());
+            progressDialog.setMessage(LocaleController.getString("Loading", R.string.Loading));
+            progressDialog.setCanceledOnTouchOutside(false);
+            progressDialog.setCancelable(false);
+            progressDialog.show();
+        }
+        final ProgressDialog progressDialogFinal = progressDialog;
         ConnectionsManager.getInstance().sendRequest(req, new RequestDelegate() {
             @Override
             public void run(final TLObject response, final TLRPC.TL_error error) {
@@ -300,7 +303,9 @@ public class LastSeenActivity extends BaseFragment implements NotificationCenter
                     @Override
                     public void run() {
                         try {
-                            progressDialog.dismiss();
+                            if (progressDialogFinal != null) {
+                                progressDialogFinal.dismiss();
+                            }
                         } catch (Exception e) {
                             FileLog.e("tmessages", e);
                         }

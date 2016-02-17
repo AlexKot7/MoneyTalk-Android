@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- START GENERATED CODE -->
+
+
+    <string name="mt_gen_oferta_auth_text">Продолжая, Вы соглашаетесь</string>
+
+    <string name="mt_gen_oferta_conditions_link">с условиями оферты</string>
+
+    <string name="mt_gen_oferta_oferta">Оферта</string>
+
+    <string name="mt_gen_oferta_transferconditions">Условия переводов</string>
+
+    <string name="mt_gen_sms_resendcode">Отправить код повторно</string>
+
+    <string name="mt_gen_sms_codedescription">Для защиты ваших платежных\nданных введите код, отправленный\nВам по СМС</string>
+
+    <string name="mt_gen_pin_firstpin_set">Задайте код доступа\nк платежным данным</string>
+
+    <string name="mt_gen_pin_firstpin">Введите код доступа</string>
+
+    <string name="mt_gen_pin_secondpin">Повторите код доступа</string>
+
+    <string name="mt_gen_pin_сurrentpin_enter">Введите текущий код доступа</string>
+
+    <string name="mt_gen_pin_error_pinattemptsexceeded">Вход в приложение временно заблокирован, так как Вы неправильно ввели код доступа</string>
+
+    <string name="mt_gen_pin_userblockeduntil">Вы сможете ввести код через:</string>
+
+    <string name="mt_gen_pin_userblocked">Вход заблокирован</string>
+
+    <string name="mt_gen_turnontouchid_suggest_line1">Подключите авторизацию по TouchID</string>
+
+    <string name="mt_gen_turnontouchid_suggest_line2">чтобы не вводить код доступа</string>
+
+    <string name="mt_gen_turnontouchid_suggest_ok">Ок</string>
+
+    <string name="mt_gen_touchid_alert">Приложите палец, чтобы перейти к платежным данным</string>
+
+    <string name="mt_gen_transfer_title">Перевод</string>
+
+    <string name="mt_gen_transfer_perform"> Отправить деньги</string>
+
+    <string name="mt_gen_transfer_cardnumber_sender">Номер вашей карты</string>
+
+    <string name="mt_gen_transfer_fromcard">С карты</string>
+
+    <string name="mt_gen_transfer_newcard">Новая карта</string>
+
+    <string name="mt_gen_transfer_fromnewcard">С новой карты</string>
+
+    <string name="mt_gen_transfer_phonenumber_placeholder">Номер телефона</string>
+
+    <string name="mt_gen_transfer_cardnumber_receiver">Номер карты получателя</string>
+
+    <string name="mt_gen_transfer_transferamount">Сумма перевода</string>
+
+    <string name="mt_gen_transfer_cards">Карты</string>
+
+    <string name="mt_gen_transfer_completed">%1$s отправил %2$s %3$sруб.</string>
+
+    <string name="mt_gen_transfer_phonehint">На этот номер телефона будет отправлено уведомление о переводе</string>
+
+    <string name="mt_gen_transfer_cardnumberhint">Укажите номер карты, на которую надо зачислить перевод</string>
+
+    <string name="mt_gen_transfer_performbutton">Перевести</string>
+
+    <string name="mt_gen_transfer_savecard">Сохранить карту</string>
+
+    <string name="mt_gen_transfer_segmentedcontrolphone">По номеру телефона</string>
+
+    <string name="mt_gen_transfer_segmentedcontrolcard">По номеру карты</string>
+
+    <string name="mt_gen_transfer_errorsource">Укажите карту для перевода</string>
+
+    <string name="mt_gen_transfer_errordestination">Укажите карту получателя</string>
+
+    <string name="mt_gen_transfer_errorsumm">Введите сумму от %1$s до %2$s руб.</string>
+
+    <string name="mt_gen_commission_value">Комиссия %1$s руб.</string>
+
+    <string name="mt_gen_commission_nocommission">Комиссия не взимается</string>
+
+    <string name="mt_gen_commission_loadingerror">Не удалось загрузить комиссию</string>
+
+    <string name="mt_gen_settings_card">Мои карты</string>
+
+    <string name="mt_gen_settings_reset">Сброс</string>
+
+    <string name="mt_gen_settings_touchid">TouchID</string>
+
+    <string name="mt_gen_settings_moneytalk_buttontitle">Настройки денежных переводов</string>
+
+    <string name="mt_gen_settings_moneytalk_title">Настройки</string>
+
+    <string name="mt_gen_settings_attachcard">Привязать карту</string>
+
+    <string name="mt_gen_title_deletecardalert">Удалить карту?</string>
+
+    <string name="mt_gen_setting_onecardhint">Карта для отправки и получения денег</string>
+
+    <string name="mt_gen_settings_maincardhint">Основная - карта для отправки и получения денег</string>
+
+    <string name="mt_gen_settings_main">Основная</string>
+
+    <string name="mt_gen_reset_changepassword">Поменять код доступа</string>
+
+    <string name="mt_gen_reset_resetsettings">Сбросить все настройки</string>
+
+    <string name="mt_gen_reset_title">Сброс</string>
+
+    <string name="mt_gen_error_errortitle">Ой!</string>
+
+    <string name="mt_gen_error_couldnotsendconfirmationcode">Не удалось доставить код подтверждения. Попробуйте снова.</string>
+
+    <string name="mt_gen_welcome_title1">MoneyTalk</string>
+
+    <string name="mt_gen_welcome_title2">Перевод денег</string>
+
+    <string name="mt_gen_welcome_title3">Получение денег</string>
+
+    <string name="mt_gen_welcome_text1">Ваш привычный  Телеграм\nс новыми возможностями</string>
+
+    <string name="mt_gen_welcome_text2">Отправляйте деньги другу\nпрямо в чате: по номеру\nтелефона или на карту</string>
+
+    <string name="mt_gen_welcome_text3">Друг получит деньги\nи без приложения: мы отправим\nему смс с инструкциями</string>
+
+
+
+    <!-- END GENERATED CODE -->
+
+
+
+
+</resources>

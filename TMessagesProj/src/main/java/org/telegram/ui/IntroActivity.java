@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2015.
+ * Copyright Nikolai Kudashov, 2013-2016.
  */
 
 package org.telegram.ui;
@@ -28,9 +28,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.BuildConfig;
+import ru.tinkoff.telegram.mt.BuildConfig;
 import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.R;
+
+import ru.tinkoff.telegram.mt.Glue;
+import ru.tinkoff.telegram.mt.R;
 import org.telegram.tgnet.ConnectionsManager;
 
 public class IntroActivity extends Activity {
@@ -116,6 +118,9 @@ public class IntroActivity extends Activity {
                     R.string.Page7Message
             };
         }
+        icons = Glue.Intro.icons;
+        messages = Glue.Intro.messages;
+        titles = Glue.Intro.titles;
         viewPager = (ViewPager) findViewById(R.id.intro_view_pager);
         TextView startMessagingButton = (TextView) findViewById(R.id.start_messaging_button);
         startMessagingButton.setText(LocaleController.getString("StartMessaging", R.string.StartMessaging).toUpperCase());
@@ -128,6 +133,7 @@ public class IntroActivity extends Activity {
         topImage1 = (ImageView) findViewById(R.id.icon_image1);
         topImage2 = (ImageView) findViewById(R.id.icon_image2);
         bottomPages = (ViewGroup) findViewById(R.id.bottom_pages);
+        Glue.Intro.injectPagerView(bottomPages);
         topImage2.setVisibility(View.GONE);
         viewPager.setAdapter(new IntroAdapter());
         viewPager.setPageMargin(0);
@@ -237,16 +243,16 @@ public class IntroActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        if (justCreated) {
-            if (LocaleController.isRTL) {
-                viewPager.setCurrentItem(6);
-                lastPage = 6;
-            } else {
+//        if (justCreated) {
+//            if (LocaleController.isRTL) {
+//                viewPager.setCurrentItem(6);
+//                lastPage = 6;
+//            } else {
                 viewPager.setCurrentItem(0);
                 lastPage = 0;
-            }
+//            }
             justCreated = false;
-        }
+//        }
         AndroidUtilities.checkForCrashes(this);
         AndroidUtilities.checkForUpdates(this);
     }
@@ -260,7 +266,7 @@ public class IntroActivity extends Activity {
     private class IntroAdapter extends PagerAdapter {
         @Override
         public int getCount() {
-            return 7;
+            return Glue.Intro.itemCount;
         }
 
         @Override
@@ -284,15 +290,16 @@ public class IntroActivity extends Activity {
         @Override
         public void setPrimaryItem(ViewGroup container, int position, Object object) {
             super.setPrimaryItem(container, position, object);
-            int count = bottomPages.getChildCount();
-            for (int a = 0; a < count; a++) {
-                View child = bottomPages.getChildAt(a);
-                if (a == position) {
-                    child.setBackgroundColor(0xff2ca5e0);
-                } else {
-                    child.setBackgroundColor(0xffbbbbbb);
-                }
-            }
+//            int count = bottomPages.getChildCount();
+//            for (int a = 0; a < count; a++) {
+//                View child = bottomPages.getChildAt(a);
+//                if (a == position) {
+//                    child.setBackgroundColor(0xff2ca5e0);
+//                } else {
+//                    child.setBackgroundColor(0xffbbbbbb);
+//                }
+//            }
+            Glue.Intro.resetValue(bottomPages, position + 1);
         }
 
         @Override

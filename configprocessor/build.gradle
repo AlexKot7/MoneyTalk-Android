@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // AnnotationProcessor should have access to the tools.jar library
+    // that is usually located in "%JDK_PATH%/lib"
+    compile files("${System.properties['java.home']}/../lib/tools.jar")
+}

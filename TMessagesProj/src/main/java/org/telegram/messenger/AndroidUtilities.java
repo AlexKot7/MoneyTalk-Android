@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2015.
+ * Copyright Nikolai Kudashov, 2013-2016.
  */
 
 package org.telegram.messenger;
@@ -76,6 +76,9 @@ import java.util.Date;
 import java.util.Hashtable;
 import java.util.Locale;
 import java.util.regex.Pattern;
+
+import ru.tinkoff.telegram.mt.Glue;
+import ru.tinkoff.telegram.mt.R;
 
 public class AndroidUtilities {
 
@@ -536,7 +539,7 @@ public class AndroidUtilities {
     }
 
     public static int getViewInset(View view) {
-        if (view == null || Build.VERSION.SDK_INT < 21) {
+        if (view == null || Build.VERSION.SDK_INT < 21 || view.getHeight() == AndroidUtilities.displaySize.y || view.getHeight() == AndroidUtilities.displaySize.y - statusBarHeight) {
             return 0;
         }
         try {
@@ -814,7 +817,7 @@ public class AndroidUtilities {
         }
         File storageDir = null;
         if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-            storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "Telegram");
+            storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), Glue.getAppName(ApplicationLoader.applicationContext));
             if (!storageDir.mkdirs()) {
                 if (!storageDir.exists()){
                     FileLog.d("tmessages", "failed to create directory");

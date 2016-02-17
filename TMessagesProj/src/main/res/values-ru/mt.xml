@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!-- DEFAULTS -->
+    <string name="mt_cancel">Отмена</string>
+    <string name="mt_delete">Удалить</string>
+    <string name="mt_unknown_error_msg">Что-то пошло не так...</string>
+    <string name="mt_continue">Продолжить</string>
+    <string name="mt_ok">ОК</string>
+
+    <!-- HINTS -->
+    <string name="mt_sms_hint">Sms-код</string>
+    <string name="mt_edit_card_your_number">Номер Вашей карты</string>
+    <string name="mt_edit_card_number">Номер карты</string>
+    <string name="mt_edit_card_date">ММ/ГГ</string>
+    <string name="mt_edit_card_cvc">CVC</string>
+    <string name="mt_commission_loading">Загружаем комиссию</string>
+
+    <!--  ACTION BAR TITLES -->
+    <string name="mt_abt_sms">Код подтверждения</string>
+    <string name="mt_abt_3ds">Подтверждение</string>
+    <string name="mt_abt_pin_code">Код доступа</string>
+    <string name="mt_abt_receiver">Получатель</string>
+
+    <!-- MESSAGES AND LABELS -->
+    <string name="mt_choose_your_card">Выберите карту</string>
+    <string name="mt_untrusted_certificate"></string>
+    <string name="mt_r_u_sure_reset">Сбросить настройки? Вы уверены?</string>
+    <string name="mt_bad_network">Сервер временно недоступен</string>
+
+    <!--DIALOG-->
+    <string name="mt_network_loading">Пожалуйста, подождите&#8230;</string>
+    <string name="mt_tracking_id">Код ошибки: %1$s</string>
+
+</resources>

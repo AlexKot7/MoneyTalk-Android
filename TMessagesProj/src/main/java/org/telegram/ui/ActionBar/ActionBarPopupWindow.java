@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2015.
+ * Copyright Nikolai Kudashov, 2013-2016.
  */
 
 //Thanks to https://github.com/JakeWharton/ActionBarSherlock/
@@ -29,7 +29,7 @@ import android.widget.ScrollView;
 
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.FileLog;
-import org.telegram.messenger.R;
+import ru.tinkoff.telegram.mt.R;
 import org.telegram.ui.Components.LayoutHelper;
 
 import java.lang.reflect.Field;

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mt_app_name">MoneyTalk</string>
+
+    <!-- DEFAULTS -->
+    <string name="mt_send">@string/mt_gen_transfer_performbutton</string>
+    <string name="mt_error">@string/mt_gen_error_errortitle</string>
+    <string name="mt_unknown_error_msg"> </string>
+    <string name="mt_cancel">Cancel</string>
+    <string name="mt_delete">Delete</string>
+    <string name="mt_continue">Next</string>
+    <string name="mt_ok">ОК</string>
+
+    <!-- HINTS -->
+    <string name="mt_sms_hint">Confirmation code</string>
+    <string name="mt_edit_card_your_number">Sender’s card number</string>
+    <string name="mt_edit_card_number">Card number</string>
+    <string name="mt_edit_card_date">MM/YY</string>
+    <string name="mt_edit_card_cvc">CVC</string>
+    <string name="mt_commission_loading">Fee processing…</string>
+    <string name="mt_commission_value">@string/mt_gen_commission_value</string>
+    <string name="mt_commission_fail">@string/mt_gen_commission_loadingerror</string>
+    <string name="mt_commission_not_need">@string/mt_gen_commission_nocommission</string>
+    <string name="mt_primary">@string/mt_gen_settings_main</string>
+    <string name="mt_auth_set_pin">@string/mt_gen_pin_firstpin_set</string>
+    <string name="mt_auth_enter_pin">@string/mt_gen_pin_firstpin</string>
+    <string name="mt_auth_repeat_pin">@string/mt_gen_pin_secondpin</string>
+
+
+    <!--  ACTION BAR TITLES -->
+    <string name="mt_abt_default">@string/AppName</string>
+    <string name="mt_abt_transfer">@string/mt_gen_transfer_title</string>
+    <string name="mt_abt_settings">@string/mt_gen_settings_moneytalk_title</string>
+    <string name="mt_abt_sms">Confirmation code</string>
+    <string name="mt_abt_3ds">Verification</string>
+    <string name="mt_abt_pin_code">Access code</string>
+    <string name="mt_abt_receiver">Receiver</string>
+    <string name="mt_abt_reset">@string/mt_gen_reset_title</string>
+    <string name="mt_abt_offer">@string/mt_gen_oferta_oferta</string>
+    <string name="mt_abt_your_cards">@string/mt_gen_settings_card</string>
+
+
+    <!-- MESSAGES AND LABELS -->
+    <string name="mt_account_blocked_info">@string/mt_gen_pin_userblocked</string>
+    <string name="mt_choose_your_card">Choose card</string>
+    <string name="mt_untrusted_certificate"></string>
+    <string name="mt_resend_code">@string/mt_gen_sms_resendcode</string>
+    <string name="mt_enter_sms_label">@string/mt_gen_sms_codedescription</string>
+    <string name="mt_r_u_sure_reset">Reset settings?</string>
+    <string name="mt_reset_settings">@string/mt_gen_reset_resetsettings</string>
+    <string name="mt_pin_time_string">@string/mt_gen_pin_error_pinattemptsexceeded</string>
+    <string name="mt_send_money_label">@string/mt_gen_transfer_phonehint</string>
+    <string name="mt_bad_network">Server unavailable</string>
+
+    <string name="mt_settings_item">@string/mt_gen_settings_moneytalk_title</string>
+
+    <!-- TRANSFER -->
+    <string name="mt_transfer_dst_phone">@string/mt_gen_transfer_segmentedcontrolphone</string>
+    <string name="mt_transfer_dst_card">@string/mt_gen_transfer_segmentedcontrolcard</string>
+    <string name="mt_transfer_money_amount">@string/mt_gen_transfer_transferamount</string>
+    <string name="mt_transfer_new_card">@string/mt_gen_transfer_newcard</string>
+    <string name="mt_transfer_from_card">@string/mt_gen_transfer_fromcard</string>
+
+    <!-- SETTINGS -->
+    <string name="mt_settings_your_cards">@string/mt_gen_settings_card</string>
+    <string name="mt_settings_offer">@string/mt_gen_oferta_oferta</string>
+    <string name="mt_settings_reset">@string/mt_gen_settings_reset</string>
+    <string name="mt_settings_change_pin">@string/mt_gen_reset_changepassword</string>
+    <string name="mt_settings_reset_all_settings">@string/mt_gen_reset_resetsettings</string>
+    <string name="mt_settings_offer_offer">@string/mt_gen_oferta_oferta</string>
+    <string name="mt_settings_offer_transfers">@string/mt_gen_oferta_transferconditions</string>
+
+    <!-- INTRO -->
+    <string name="mt_intro_title_1">@string/mt_gen_welcome_title1</string>
+    <string name="mt_intro_title_2">@string/mt_gen_welcome_title2</string>
+    <string name="mt_intro_title_3">@string/mt_gen_welcome_title3</string>
+    <string name="mt_intro_message_1">@string/mt_gen_welcome_text1</string>
+    <string name="mt_intro_message_2">@string/mt_gen_welcome_text2</string>
+    <string name="mt_intro_message_3">@string/mt_gen_welcome_text3</string>
+
+    <!--DIALOG-->
+    <string name="mt_network_loading">Please, wait&#8230;</string>
+    <string name="mt_tracking_id">Error code: %1$s</string>
+
+</resources>

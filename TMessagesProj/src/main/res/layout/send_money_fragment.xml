@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+
+                  >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@drawable/greydivider"/>
+
+        <TextView
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="#ff3e90cf"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:id="@+id/tv_new_card"
+            android:text="@string/mt_transfer_new_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View android:id="@+id/v_divider_new_card" android:layout_width="match_parent"  android:layout_height="1px" android:background="#ffd9d9d9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#ff3e90cf"
+                android:textSize="12sp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:id="@+id/tv_src_description"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="@string/mt_transfer_from_card"/>
+
+            <FrameLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:id="@+id/fl_container_for_src"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@drawable/greydivider">
+
+        </View>
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tv_recepient"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical"/>
+
+        <View android:layout_width="match_parent"  android:layout_height="1px" android:background="#ffd9d9d9" />
+
+        <ru.tinkoff.telegram.mt.views.BottomLinedLinearLayout
+            android:id="@+id/ll_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+
+                android:textSize="12sp"
+                android:id="@+id/tv_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/mt_transfer_dst_phone"/>
+
+            <TextView
+
+                android:textSize="12sp"
+                android:id="@+id/tv_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/mt_transfer_dst_card"/>
+        </ru.tinkoff.telegram.mt.views.BottomLinedLinearLayout>
+
+        <FrameLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ru.tinkoff.telegram.mt.views.EditCardView
+
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/et_dst_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:inputType="phone"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/edit_text"
+                android:id="@+id/et_dst_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/greydivider"
+            android:padding="16dp"
+            android:textSize="12sp"
+            android:textColor="#ff8a8a8a"
+            android:text="@string/mt_send_money_label"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <EditText
+                android:layout_margin="16dp"
+                android:textSize="16dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/mt_transfer_money_amount"
+                android:id="@+id/et_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <ru.tinkoff.telegram.mt.views.LoadingTextView
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/tv_commission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:textColor="#ffffff"
+                android:id="@+id/btn_send_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/mt_send"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -3,7 +3,7 @@
  * It is licensed under GNU GPL v. 2 or later.
  * You should have received a copy of the license in this archive (see LICENSE).
  *
- * Copyright Nikolai Kudashov, 2013-2015.
+ * Copyright Nikolai Kudashov, 2013-2016.
  */
 
 package org.telegram.ui.Components;
@@ -36,7 +36,6 @@ import org.telegram.messenger.MediaController;
 import org.telegram.messenger.MessageObject;
 import org.telegram.messenger.NotificationCenter;
 import org.telegram.messenger.support.widget.LinearLayoutManager;
-import org.telegram.messenger.R;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Adapters.PhotoAttachAdapter;
 import org.telegram.ui.Cells.PhotoAttachPhotoCell;
@@ -45,6 +44,9 @@ import org.telegram.ui.PhotoViewer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import ru.tinkoff.telegram.mt.Glue;
+import ru.tinkoff.telegram.mt.R;
 
 public class ChatAttachView extends FrameLayout implements NotificationCenter.NotificationCenterDelegate, PhotoViewer.PhotoViewerProvider {
 
@@ -243,7 +245,6 @@ public class ChatAttachView extends FrameLayout implements NotificationCenter.No
         int width = right - left;
 
         int t = AndroidUtilities.dp(8);
-        attachPhotoRecyclerView.layout(0, t, width, t + attachPhotoRecyclerView.getMeasuredHeight());
         progressView.layout(0, t, width, t + progressView.getMeasuredHeight());
         lineView.layout(0, AndroidUtilities.dp(96), width, AndroidUtilities.dp(96) + lineView.getMeasuredHeight());
 
@@ -253,6 +254,8 @@ public class ChatAttachView extends FrameLayout implements NotificationCenter.No
             int x = AndroidUtilities.dp(10) + (a % 4) * (AndroidUtilities.dp(85) + diff);
             views[a].layout(x, y, x + views[a].getMeasuredWidth(), y + views[a].getMeasuredHeight());
         }
+
+        Glue.layoutAttachViewItems(views, AndroidUtilities.density);
     }
 
     public void updatePhotosButton() {
@@ -375,6 +378,7 @@ public class ChatAttachView extends FrameLayout implements NotificationCenter.No
         photoAttachAdapter.clearSelectedPhotos();
         baseFragment = parentFragment;
         updatePhotosButton();
+        Glue.insertSendMoneyButtonTo(views, this, baseFragment);
     }
 
     public HashMap<Integer, MediaController.PhotoEntry> getSelectedPhotos() {

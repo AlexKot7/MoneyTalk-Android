@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- START GENERATED CODE -->
+
+
+    <string name="mt_gen_oferta_auth_text">I accept</string>
+
+    <string name="mt_gen_oferta_conditions_link">terms&amp;conditions</string>
+
+    <string name="mt_gen_oferta_oferta">Terms&amp;conditions</string>
+
+    <string name="mt_gen_oferta_transferconditions">Pricing</string>
+
+    <string name="mt_gen_sms_resendcode">Resend confirmation code</string>
+
+    <string name="mt_gen_sms_codedescription">To secure your transfers enter the code sent to you via SMS</string>
+
+    <string name="mt_gen_pin_firstpin_set">Set access code</string>
+
+    <string name="mt_gen_pin_firstpin">Enter access code</string>
+
+    <string name="mt_gen_pin_secondpin">Repeat access code</string>
+
+    <string name="mt_gen_pin_сurrentpin_enter">Enter access code</string>
+
+    <string name="mt_gen_pin_error_pinattemptsexceeded">Access is temporarily blocked because you’ve entered incorrect access code</string>
+
+    <string name="mt_gen_pin_userblockeduntil">You can enter code in:</string>
+
+    <string name="mt_gen_pin_userblocked">Access blocked</string>
+
+    <string name="mt_gen_turnontouchid_suggest_line1">Turn TouchID on</string>
+
+    <string name="mt_gen_turnontouchid_suggest_line2"></string>
+
+    <string name="mt_gen_turnontouchid_suggest_ok">OK</string>
+
+    <string name="mt_gen_touchid_alert">Place finger to enter transfer settings</string>
+
+    <string name="mt_gen_transfer_title">Money transfer</string>
+
+    <string name="mt_gen_transfer_perform">Send money</string>
+
+    <string name="mt_gen_transfer_cardnumber_sender">Sender’s card number</string>
+
+    <string name="mt_gen_transfer_fromcard">Sender’s card</string>
+
+    <string name="mt_gen_transfer_newcard">New card</string>
+
+    <string name="mt_gen_transfer_fromnewcard">New card</string>
+
+    <string name="mt_gen_transfer_phonenumber_placeholder">Phone number</string>
+
+    <string name="mt_gen_transfer_cardnumber_receiver">Recipient’s card number</string>
+
+    <string name="mt_gen_transfer_transferamount">Amount</string>
+
+    <string name="mt_gen_transfer_cards">Bank cards</string>
+
+    <string name="mt_gen_transfer_completed">%1$s sent %2$s %3$s rubles</string>
+
+    <string name="mt_gen_transfer_phonehint">We’ll send SMS about your money transfer to this phone number</string>
+
+    <string name="mt_gen_transfer_cardnumberhint">Enter recipient’s card number</string>
+
+    <string name="mt_gen_transfer_performbutton">Send money</string>
+
+    <string name="mt_gen_transfer_savecard">Add card</string>
+
+    <string name="mt_gen_transfer_segmentedcontrolphone">Via phone number</string>
+
+    <string name="mt_gen_transfer_segmentedcontrolcard">Via card number</string>
+
+    <string name="mt_gen_transfer_errorsource">Choose the bank card</string>
+
+    <string name="mt_gen_transfer_errordestination">Enter recipient’s card</string>
+
+    <string name="mt_gen_transfer_errorsumm">Enter transfer amount (from %1$s to %2$s rubles)</string>
+
+    <string name="mt_gen_commission_value">Fee %1$s rubles</string>
+
+    <string name="mt_gen_commission_nocommission">No fee</string>
+
+    <string name="mt_gen_commission_loadingerror">Couldn’t get fee</string>
+
+    <string name="mt_gen_settings_card">My cards</string>
+
+    <string name="mt_gen_settings_reset">Reset</string>
+
+    <string name="mt_gen_settings_touchid">TouchID</string>
+
+    <string name="mt_gen_settings_moneytalk_buttontitle">Money transfer settings</string>
+
+    <string name="mt_gen_settings_moneytalk_title">Settings</string>
+
+    <string name="mt_gen_settings_attachcard">Add card</string>
+
+    <string name="mt_gen_title_deletecardalert">Delete card</string>
+
+    <string name="mt_gen_setting_onecardhint">Default card to get and send money</string>
+
+    <string name="mt_gen_settings_maincardhint">Default card to get and send money</string>
+
+    <string name="mt_gen_settings_main">Default</string>
+
+    <string name="mt_gen_reset_changepassword">Change access code</string>
+
+    <string name="mt_gen_reset_resetsettings">Reset all settings</string>
+
+    <string name="mt_gen_reset_title">Reset</string>
+
+    <string name="mt_gen_error_errortitle">Ooops!</string>
+
+    <string name="mt_gen_error_couldnotsendconfirmationcode">Couldn’t send confirmation code. Please, try again.</string>
+
+    <string name="mt_gen_welcome_title1">MoneyTalk</string>
+
+    <string name="mt_gen_welcome_title2">Send money</string>
+
+    <string name="mt_gen_welcome_title3">Receive money</string>
+
+    <string name="mt_gen_welcome_text1">Just Telegram with new features</string>
+
+    <string name="mt_gen_welcome_text2">Send money to your friends during chat: via phone or card number</string>
+
+    <string name="mt_gen_welcome_text3">Friends’ll receive money even without this app installed. They’ll get an SMS with instructions»</string>
+
+
+
+    <!-- END GENERATED CODE -->
+</resources>

@@ -1,0 +1,90 @@
+//MoneyTalk
+
+//Oferta
+"Oferta.Auth.Text" = "I accept";
+"Oferta.Conditions.Link" = "terms&conditions";
+"Oferta.Oferta" = "Terms&conditions";
+"Oferta.TransferConditions" = "Pricing";
+
+//SMS confirmation
+
+"SMS.ResendCode" = "Resend confirmation code";
+"SMS.CodeDescription" = "To secure your transfers enter the code sent to you via SMS";
+
+//Pin code
+"Pin.FirstPin.Set" = "Set access code";
+"Pin.FirstPin" = "Enter access code";
+"Pin.SecondPin" = "Repeat access code";
+"Pin.СurrentPin.Enter" = "Enter access code";
+"Pin.Error.PinAttemptsExceeded" = "Access is temporarily blocked because you’ve entered incorrect access code";
+"Pin.UserBlockedUntil" = "You can enter code in:";
+"Pin.UserBlocked" = "Access blocked";
+
+//TouchID
+"TurnOnTouchID.Suggest.Line1" = "Turn TouchID on";
+"TurnOnTouchID.Suggest.Line2" = "";
+"TurnOnTouchID.Suggest.Ok" = "OK";
+"TouchID.Alert" = "Place finger to enter transfer settings";
+
+//Transfer
+"Transfer.Title" = "Money transfer";
+"Transfer.Perform" = "Send money";
+"Transfer.CardNumber.Sender" = "Sender’s card number";
+"Transfer.FromCard" = "Sender’s card";
+"Transfer.NewCard" = "New card";
+"Transfer.FromNewCard" = "New card";
+"Transfer.PhoneNumber.Placeholder" = "Phone number";
+"Transfer.CardNumber.Receiver" = "Recipient’s card number";
+"Transfer.TransferAmount" = "Amount";
+"Transfer.Cards" = "Bank cards";
+"Transfer.Completed" = "%@ sent %@ %@ rubles";
+"Transfer.phoneHint" = "We’ll send SMS about your money transfer to this phone number";
+"Transfer.cardNumberHint" = "Enter recipient’s card number";
+"Transfer.performButton" = "Send money";
+"Transfer.saveCard" = "Add card";
+"Transfer.segmentedControlPhone" = "Via phone number";
+"Transfer.segmentedControlCard" = "Via card number";
+//Errors
+"Transfer.errorSource" = "Choose the bank card";
+"Transfer.errorDestination" = "Enter recipient’s card";
+"Transfer.errorSumm" = "Enter transfer amount (from %@ to %@ rubles)";
+
+//Commission
+"Commission.Value" = "Fee %@ rubles";
+"Commission.NoCommission" = "No fee";
+"Commission.LoadingError" = "Couldn’t get fee";
+
+
+//Settings
+"Settings.Card" = "My cards";
+"Settings.Reset" = "Reset";
+"Settings.TouchID" = "TouchID";
+"Settings.MoneyTalk.ButtonTitle" = "Money transfer settings";
+"Settings.MoneyTalk.Title" = "Settings";
+"Settings.AttachCard" = "Add card";
+"title_deleteCardAlert" = "Delete card";
+"Setting.oneCardHint" = "Default card to get and send money";
+"Settings.mainCardHint" = "Default card to get and send money";
+"Settings.main" = "Default";
+
+//Reset
+"Reset.ChangePassword" = "Change access code";
+"Reset.ResetSettings" = "Reset all settings";
+"Reset.Title" = "Reset";
+
+//API errors
+"Error.ErrorTitle" = "Ooops!";
+"Error.CouldNotSendConfirmationCode" = "Couldn’t send confirmation code. Please, try again.";
+
+//Welcome Screen
+"Welcome.Title1" = "MoneyTalk";
+"Welcome.Title2" = "Send money";
+"Welcome.Title3" = "Receive money";
+
+"Welcome.Text1" = "Just Telegram with new features";
+"Welcome.Text2" = "Send money to your friends during chat: via phone or card number";
+"Welcome.Text3" = "Friends’ll receive money even without this app installed. They’ll get an SMS with instructions»;
+
+
+
+
